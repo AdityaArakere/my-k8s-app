@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: my-app
-          image: adityaarakere1/minikubetest:v3  # Update to use Docker Hub image with your username
+          image: adityaarakere1/minikubetest:v4  # Update to use Docker Hub image with your username
           ports:
             - containerPort: 3000  # Update if your app uses a different port

@@ -9,4 +9,4 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 3000  # The container port
-  type: LoadBalancer  # Use NodePort or ClusterIP for local testing
+  type: NodePort  # Use NodePort or ClusterIP for local testing
