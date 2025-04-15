@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: my-app
+          image: adityaarakere1/minikubetest:v3  # Update to use Docker Hub image with your username
+          ports:
+            - containerPort: 3000  # Update if your app uses a different port
